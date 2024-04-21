@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .demo {
+    background-color: theme("colors.white");
+    border-radius: theme("borderRadius.lg");
+    padding: theme("spacing.6");
+    box-shadow: theme("boxShadow.xl");
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.header {
+  @apply text-4xl font-bold text-center text-blue-950 mb-8;
+}
+
+.section {
+  @apply max-w-[1040px] m-auto md:pl-20 p-4 py-8;
+}
+
+.contact-div {
+  @apply flex flex-col p-2;
+}
+
+.contact-label {
+  @apply uppercase text-sm py-2;
+}
+
+.contact-input {
+  @apply border-2 rounded-lg p-3 flex border-gray-300;
+}
